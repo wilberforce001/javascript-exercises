@@ -1,4 +1,8 @@
-const helloWorld = require('./helloWorld');
+const helloWorld = function() {
+  return 'Hello, World!'
+}
+
+module.exports = helloWorld
 
 describe('Hello World', function() {
   test('says "Hello, World!"', function() {
